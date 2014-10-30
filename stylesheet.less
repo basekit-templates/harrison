@@ -87,7 +87,7 @@ body {
 	}
 }
 
-.bk-zone {
+.zone-content {
 	background-color: @color-swatch1;
 	padding: 30px;
 	margin: 20px 0;
@@ -101,7 +101,7 @@ body {
 
 
 // -----------------------------
-// Header & Footer
+// Header
 // -----------------------------
 
 
@@ -145,12 +145,12 @@ body {
         }
         @media @mobile {
             a {
-                background-color: @font-swatch7-background-color-hover;
+                background-color: @font-swatch7-background-color;
 				.border-radius(4px);
                 &:hover {
                     color: @color-swatch1;
 					text-decoration: none;
-					background-color: lighten(@font-swatch7-background-color, 15%);
+					background-color: @font-swatch7-background-color-hover;
 					.transition(background-color, .5s, ease-in);
                 }
             }
@@ -212,6 +212,10 @@ body {
 	}
 }
 
+.widget.extendednavigation {
+	.clearfix;
+}
+
 .widget.extendednavigation ul li {
 	content-align: left;
 	&:last-child a:after {
@@ -219,15 +223,19 @@ body {
 	}
 	&:last-child a {
 		border-right: 1px solid @color-swatch7;
+		border-bottom: 1px solid darken(@color-swatch7,5%);
 		@media @tablet {
 			border-right: none;
+			border-bottom: none;
 		}
 	}
 	a {
 		padding: 15px 20px;
 		border-left: 1px solid @color-swatch7;
+		border-bottom: 1px solid darken(@color-swatch7,5%);
 		@media @tablet {
 			border-left: none;
+			border-bottom: none;
 			padding: 10px 0;
 		}
 		&:after {
@@ -289,9 +297,11 @@ body {
 	span.text {
 		padding: 15px 20px;
 		border-left: 1px solid @color-swatch7;
+		border-bottom: 1px solid darken(@color-swatch7,5%);
 		@media @tablet {
 			padding: 10px 0;
 			border-left: none;
+			border-bottom: none;
 		}
 	}
 	ul li span.text {
@@ -302,6 +312,9 @@ body {
 	}
 	ul li a {
 		padding: 8px 15px;
+		@media @tablet {
+			padding: 10px 5px;
+		}
 		span.text {
 			padding: 0;
 		}
@@ -355,8 +368,25 @@ body {
 	}
 }
 
-.widget.feature h2 {
-	text-shadow: 1px 1px 1px #000;
+.widget.feature {
+	h2 {
+		text-shadow: 1px 1px 1px #000;
+		@media @tablet {
+			background-color: fade(@color-swatch1,90%);
+			padding: 20px;
+		}
+	}
+	h3 {
+		@media @tablet {
+			background-color: fade(@color-swatch1,90%);
+			padding: 10px 20px 30px;
+		}
+	}
+	button {
+		-webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+		-moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+		box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.75);
+	}
 }
 
 .widget.feature .feature-bgimg .content {
@@ -369,50 +399,6 @@ body {
 			width: 90%;
 			margin: 0 5%;
 		}
-	}
-}
-
-
-
-// Slideshow 
-
-.widget.responsiveslideshow {
-	margin-bottom: 60px;
-	@media @mobile {
-		margin-bottom: 0;
-	}
-}
-
-.widget.responsiveslideshow span.inner, .widget.responsiveslideshow .slideshow-image-item, .widget.responsiveslideshow li.slideshow-image-item {
-	overflow: visible;
-}
-
-.widget.responsiveslideshow .content-wrapper {
-	background: @color-swatch1;
-	text-align: left;
-	padding: 35px 15px 0;
-	max-width: 65%;
-	margin: 0 auto 25px;
-	bottom: -135px;
-	@media @tablet {
-		padding: 20px;
-		max-width: 90%;
-	}
-	@media @mobile {
-		bottom: -80px;
-	}
-}
-
-
-
-// -----------------------------
-// Main
-// -----------------------------
-
-.widget.responsiveslideshow + div[role="main"] {
-	margin-top: 120px;
-	@media @mobile {
-		margin-top: 35px;
 	}
 }
 
