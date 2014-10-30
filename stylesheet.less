@@ -93,6 +93,7 @@ body {
 	margin: 20px 0;
 	display: inline-block;
 	border: 1px solid darken(@color-swatch1,10%);
+	width: 100%;
 }
 
 .widget {
@@ -369,16 +370,25 @@ body {
 }
 
 .widget.feature {
+	h2, h3 {
+		width: 60%;
+		float: right;
+		@media @tablet {
+			width: 80%;
+		}
+		@media @mobile {
+			width: 100%;
+			float: left;
+		}
+	}
 	h2 {
 		text-shadow: 1px 1px 1px #000;
 		@media @tablet {
-			background-color: fade(@color-swatch1,90%);
 			padding: 20px;
 		}
 	}
 	h3 {
 		@media @tablet {
-			background-color: fade(@color-swatch1,90%);
 			padding: 10px 20px 30px;
 		}
 	}
