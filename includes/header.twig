@@ -1,0 +1,20 @@
+<!-- Header Include !-->
+
+<header class="bk-header">
+	<div class="container">
+		<div class="brand">
+			{{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png'),"showTplWidget":"0"})|raw}}
+			{{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+		</div>
+		<div class="header-widgets">
+			 {{widget('clicktocall', 'headerclicktocall', {phoneText: '212 6574 6736'})|raw}}
+			 {{widget('content', 'headercontent', {content: '<p>Lorem Ipsum Dolor</p>', lines: 'all'})|raw}}
+		</div>
+	</div>
+</header>
+	<nav class="bk-nav clearfix">
+		<div class="container">
+			{{widget('extendednavigation', 'header-navigation', {"align":"left"})|raw}}
+		</div>
+	</nav>
+</div><!--end container-->
