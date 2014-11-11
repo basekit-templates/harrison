@@ -195,8 +195,6 @@ body {
 // Navigation
 
 .bk-nav {
-	float: left;
-	width: 100%;
 	background: @color-swatch7;
 	background: -moz-linear-gradient(top,  lighten(@color-swatch7, 8%), @color-swatch7, darken(@color-swatch7, 9%) 100%);
 	background: -webkit-gradient(linear, left top, left bottom, lighten(@color-swatch7, 8%), @color-swatch7, darken(@color-swatch7, 9%) 100%);
@@ -209,6 +207,8 @@ body {
 	font-family: @font-swatch6-font-family;
 	font-size: @font-swatch6-font-size;
 	@media @tablet {
+		float: left;
+		width: 100%;
 		min-height: 45px;
 	}
 }
