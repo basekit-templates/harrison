@@ -388,8 +388,10 @@
         background-image: image('/images/ic-basket.png');
         background-repeat: no-repeat;
         background-position: 10% 46%;
+        cursor: pointer;
         &:hover {
             background-image: image('/images/ic-basket-hov.png');
+            cursor: pointer;
         }
         .text:before {
             margin: 0;
@@ -399,10 +401,11 @@
         // Added
 
         &.added {
-            background-image: image('/images/ic-tick.svg');
+            background-image: none;
             background-size: 20px;
             border-color: #45D645;
             box-shadow: none;
+            cursor: pointer;
         }
     }
 
