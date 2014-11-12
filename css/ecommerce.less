@@ -166,6 +166,7 @@
             border-radius: 4px;
             height: 48px;
             margin-top: 5px;
+            margin-right: 2px;
             border: 1px solid darken(@color-swatch1,10%);
             background-color: @color-swatch6;
             -webkit-appearance: none;
@@ -387,8 +388,10 @@
         background-image: image('/images/ic-basket.png');
         background-repeat: no-repeat;
         background-position: 10% 46%;
+        cursor: pointer;
         &:hover {
             background-image: image('/images/ic-basket-hov.png');
+            cursor: pointer;
         }
         .text:before {
             margin: 0;
@@ -398,14 +401,11 @@
         // Added
 
         &.added {
-            background-image: image('/images/ic-tick.svg');
-            background-color: @color-swatch1;
+            background-image: none;
             background-size: 20px;
             border-color: #45D645;
             box-shadow: none;
-            &:hover {
-                color: @color-swatch4;
-            }
+            cursor: pointer;
         }
     }
 
