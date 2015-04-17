@@ -13,7 +13,7 @@
 
 /*	===============================
 	Colour Swatches
-	===============================	
+	===============================
 	"color1": == Background
 	"color2": == Contrast colour
 	"color3": == Button colour
@@ -26,7 +26,7 @@
 
 /*	===============================
 	Font Swatches
-	===============================	
+	===============================
 	"font1":  == Heading 1
 	"font2":  == Heading 2
 	"font3":  == Heading 3
@@ -53,11 +53,11 @@
 }
 
 .transition (@prop: all, @time: 0.5s, @ease: ease) {
-	-webkit-transition:  @prop @time @ease;  
+	-webkit-transition:  @prop @time @ease;
 	-moz-transition:     @prop @time @ease;
-	-ms-transition:      @prop @time @ease; 
+	-ms-transition:      @prop @time @ease;
 	-o-transition:       @prop @time @ease;
-	transition: 		 @prop @time @ease;  
+	transition: 		 @prop @time @ease;
 }
 
 .rotate (@deg) {
@@ -183,7 +183,7 @@ body {
 		line-height: @font-swatch10-line-height;
 		@media @mobile {
 			font-size: bkscale(@font-swatch10-font-size, 0.9);
-			line-height: bkscale(@font-swatch10-line-height, 0.9);	
+			line-height: bkscale(@font-swatch10-line-height, 0.9);
 		}
 		&:hover {
             color: @color-swatch3;
@@ -203,7 +203,6 @@ body {
 	background: -o-linear-gradient(top, lighten(@color-swatch7, 8%), @color-swatch7, darken(@color-swatch7, 9%) 100%);
 	background: -ms-linear-gradient(top,  lighten(@color-swatch7, 8%), @color-swatch7, darken(@color-swatch7, 9%) 100%);
 	background: linear-gradient(to bottom,  lighten(@color-swatch7, 8%), @color-swatch7, darken(@color-swatch7, 9%) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76041E', endColorstr='#6d0019',GradientType=0 );
 	border-bottom: 1px solid @color-swatch7;
 	font-family: @font-swatch6-font-family;
 	font-size: @font-swatch6-font-size;
@@ -276,7 +275,7 @@ body {
 			border-right: 1px solid darken(@color-swatch7, 7%);
 			border-top: 1px solid darken(@color-swatch7, 7%);
 			li {
-				border-bottom: 1px solid @color-swatch7; 
+				border-bottom: 1px solid @color-swatch7;
 				@media @mobile {
 					padding: 5px;
 				}
@@ -358,7 +357,7 @@ body {
 }
 
 
-// Feature 
+// Feature
 
 .feature-content {
     float: left;
@@ -469,7 +468,7 @@ body {
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
-    display: flex;    
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
      -webkit-flex-direction: column;
