@@ -1,42 +1,53 @@
 {
-	"name":"Harrison & Harrison",
-	"thumbnail":"harrison.png",
-	"screenshot":"harrison.png",
-    "templateType":"standard",
-    "tags": { "en": ["minimal", "modern", "light", "social", "minimal", "classic", "slideshow"] },
-    "pageTypes":["home"],
-    "colorSwatches":
-    {
+    "name": "Harrison & Harrison",
+    "thumbnail": "harrison.png",
+    "screenshot": "harrison-screenshot.jpg",
+    "templateType": "standard",
+    "tags": {
+        "en": [
+            "minimal",
+            "modern",
+            "light",
+            "social",
+            "minimal",
+            "classic",
+            "slideshow"
+        ]
+    },
+    "pageTypes": [
+        "home"
+    ],
+    "colorSwatches": {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#4d1425",
-            "color3":"#6d081a",
-            "color4":"#161616",
-            "color5":"#929091",
-            "color6":"#ffffff",
-            "color7":"#6d081a"
+            "color1": "#ffffff",
+            "color2": "#4d1425",
+            "color3": "#6d081a",
+            "color4": "#161616",
+            "color5": "#929091",
+            "color6": "#ffffff",
+            "color7": "#6d081a"
         },
         "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#00313f",
-            "color3":"#4a5d04",
-            "color4":"#00313f",
-            "color5":"#6f7575",
-            "color6":"#ffffff",
-            "color7":"#00313f"
+            "color1": "#ffffff",
+            "color2": "#00313f",
+            "color3": "#4a5d04",
+            "color4": "#00313f",
+            "color5": "#6f7575",
+            "color6": "#ffffff",
+            "color7": "#00313f"
         },
         "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#38373c",
-            "color3":"#954949",
-            "color4":"#38373c",
-            "color5":"#555555",
-            "color6":"#ffffff",
-            "color7":"#38373c"
+            "color1": "#ffffff",
+            "color2": "#38373c",
+            "color3": "#954949",
+            "color4": "#38373c",
+            "color5": "#555555",
+            "color6": "#ffffff",
+            "color7": "#38373c"
         }
     },
     "fontSwatch": {
-       "title": "Merriweather",
+        "title": "Merriweather",
         "font1": {
             "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "32px",
@@ -87,7 +98,7 @@
             "color-hover": "darken(@color-swatch1,20%)",
             "background-color": "@color-swatch6",
             "background-color-hover": "transparent"
-         },
+        },
         "font7": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "16px",
